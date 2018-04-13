@@ -3,7 +3,7 @@ class Application
   def call(env)
     time = Time.new
     resp = Rack::Response.new
-  
+
 
     local = time.hour - 6
     if local >= 12
