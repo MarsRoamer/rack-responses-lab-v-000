@@ -5,8 +5,8 @@ class Application
     resp = Rack::Response.new
     resp.write time.localtime.hour
 
-
-    if time.localtime.hour >= 12
+    local = time.hour - 6
+    if local >= 12
       resp.write "Good Afternoon!"
     else
       resp.write "Good Morning!"
