@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     resp.write "#{time.hour}:#{time.min}"
     resp.finish
-    resp.write time.hour
+    # resp.write time.hour
     # if time.hour >= 12
     #   resp.write "Good Afternoon!"
     # else
