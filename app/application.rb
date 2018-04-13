@@ -6,7 +6,7 @@ class Application
 
 
 
-    if time.hour >= 12
+    if time.localtime.hour >= 12
       resp.write "Good Afternoon!"
     else
       resp.write "Good Morning!"
